@@ -14,20 +14,20 @@ const ProjectData = {
 		github: "https://github.com/WilliamDann/minesweeper-royale",
 		description: "During CodeDay Spring 2019, a 24-hour hackathon, I created the Express backend for an online battle royale version of minesweeper, using websockets to communicate."
 	},
-	"dunabase": {
-		title: "Dunabase",
+	"MNSIT": {
+		title: "MNSIT",
 		github: "https://github.com/ottomated/dunabase",
-		description: "My first venture into Flutter. This app connects with a Google spreadsheet and uses an algorithm to enumerate the songs that can be sung by a subset of a singing group (in which each person only knows a certain set of songs)"
+		description: "Is this working?"
 	},
-	"source_mobile": {
-		title: "Source Mobile",
+	"RL": {
+		title: "Reinforcement Learning",
 		github: "https://github.com/ottomated/source-mobile",
-		description: "An app that allows students of Seattle Public Schools to check their grades on their mobile device. Published on the Apple Store and Play Store with over 3,000 downloads and great feedback! I also created a splash website from scratch for this project <a href=\"https://ottomated.net/source\">here</a>."
+		description: "Recently over winter break, I looked into making a trading bot that used reinforcement learning. For this project I used OpenAI Gym gym-Anytrading for RL trading, trained a trading bot with RL using Stable Baselines, and used Marketwatch trading data of different companies for training."
 	},
-	"repertoire": {
-		title: "Repertoire",
+	"ML": {
+		title: "Machine Learning",
 		github: "https://github.com/ottomated/repertoire",
-		description: "I made this app for my dance group to ease the sharing of costumes and dance data. This is the first project where I actively pursued usability testing and I plan to publish it once it's polished."
+		description: "Hey does this work?"
 	},
 	"makemehappy": {
 		title: "Make Me Happy",
