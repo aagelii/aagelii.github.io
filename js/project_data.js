@@ -16,33 +16,33 @@ const ProjectData = {
 	},
 	"MNSIT": {
 		title: "MNSIT",
-		github: "https://github.com/ottomated/dunabase",
+		github: "",
 		description: "Is this working?"
 	},
 	"RL": {
 		title: "Reinforcement Learning",
-		github: "https://github.com/ottomated/source-mobile",
+		github: "",
 		description: "Recently over winter break, I looked into making a trading bot that used reinforcement learning. For this project I used OpenAI Gym gym-Anytrading for RL trading, trained a trading bot with RL using Stable Baselines, and used Marketwatch trading data of different companies for training."
 	},
 	"ML": {
 		title: "Machine Learning",
-		github: "https://github.com/ottomated/repertoire",
+		github: "",
 		description: "Hey does this work?"
 	},
-	"makemehappy": {
-		title: "Make Me Happy",
-		github: "https://github.com/WilliamDann/hack2018/tree/master/CodeDay/static",
-		description: "An app made in 24 hours for CodeDay Fall 2018. I worked on the frontend and used this project to learn about how to use git properly."
+	"cs577": {
+		title: "CS577-- Intro to Algorithms",
+		github: "",
+		description: "Marc Renault"
 	},
-	"portfolio": {
-		title: "Portfolio",
-		github: "https://github.com/ottomated/portfolio",
-		description: "You're looking at it! This website was a lot of work and I'm really proud of some of the results I got, such as the svg animations and the overall aesthetic."
+	"cs564": {
+		title: "CS564-- Database Management Systems",
+		github: "",
+		description: "Paris Koutris"
 	},
-	"minesweeper_f": {
-		title: "Minesweeper Royale (frontend)",
-		github: "https://github.com/WilliamDann/minesweeper-royale/tree/master/public",
-		description: "Along with the Express backend for this 24-hour project, I created the HTML/CSS/JS frontend! I think it turned out really well for the limited time, and matched the original theme accurately.",
+	"os": {
+		title: "CS537-- Operating Systems",
+		github: "",
+		description: "Yuvraj Patel",
 	},
 	"antislouch": {
 		title: "AntiSlouch",
