@@ -31,32 +31,22 @@ const ProjectData = {
 	},
 	"cs577": {
 		title: "CS577-- Intro to Algorithms",
-		github: "",
-		description: "Marc Renault"
+		github: "https://github.com/aagelii/cs577hw",
+		description: "Instructor: <a href=\"https://mrenault.sites.cs.wisc.edu/\">Marc Renault<\a>; I took this last semester. Each weeks homework had a programming question that I did in C++ in order to, not only learn the language, but to utilize its performance to try to top the leaderboards on Gradescope."
 	},
 	"cs564": {
 		title: "CS564-- Database Management Systems",
 		github: "",
-		description: "Paris Koutris"
+		description: "Instructor: <a href=\"https://pages.cs.wisc.edu/~paris/\">Paris Koutris</a>; I took this last semester. We used C++ for all the projects: ER Modeling & Schema Design, Buffer Manager, and B+ tree implementation. I can't share the code currently as the instructor has told us not to in order to prevent cheating."
 	},
 	"os": {
 		title: "CS537-- Operating Systems",
 		github: "",
-		description: "Yuvraj Patel",
+		description: "Instructor: Yuvraj Patel; I'm currently taking this class. We are using C for most, if not all, the projects. I can't share the code currently as the instructor has told us not to in order to prevent cheating.",
 	},
-	"antislouch": {
-		title: "AntiSlouch",
-		github: "https://github.com/ottomated/AntiSlouch",
-		description: "Made in 24 hours at CodeDay Spring 2018, this app uses face tracking in OpenCV to detect whether or not you're slouching at your computer. Made in Python.",
-	},
-	"reqlang": {
-		title: "ReqLang",
-		github: "https://github.com/ottomated/reqlang",
-		description: "How I got to know C++. The eventual goal of this project is to create an interpreter for a custom language based around scripting HTTP requests, but I can't devote much time to it and it's nowhere near complete.",
-	},
-	"ognes": {
-		title: "OGNes",
-		github: "https://github.com/ottomated/OGNes",
-		description: "An NES emulator written in Java for a school project. It's compatible with most common games, although definitely not perfect.",
+	"portfolio": {
+		title: "Portfolio",
+		github: "https://github.com/aagelii/aagelii.github.io",
+		description: "You're looking at it, made it with HTML/CSS/JS",
 	},
 };
