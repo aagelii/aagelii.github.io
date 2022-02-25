@@ -1,18 +1,18 @@
 const ProjectData = {
-	"growth_tracker": {
-		title: "Growth Tracker",
-		github: "https://github.com/ottomated/growth-tracker",
-		description: "Growth Tracker is a <a href=\"https://discordapp.com/\">Discord</a> bot that's currently used by over 2,000 servers and 1,000,000 total people. It tracks how many people are in each server over time and can generate and display graphs of this growth. This was the first project that I made that became widely used, and I'm still maintaining it alone today."
-	},
-	"dickens": {
-		title: "Dickens Carolers",
+	"moviemapper": {
+		title: "Movie Mapper (Data Wrangler)",
 		github: "",
-		description: "This is a private project I did under contract from the <a href=\"http://www.dickenscarolers.com/\">Dickens Carolers</a>, a Seattle singing group. It involved interfacing with a Google spreadsheet and managing scheduling for dozens of people."
+		description: "This application will allow users to explore a movie data set, and find new movies to watch. The data set contains short descriptions, user rating averages, one or more genres, and additional metadata (including title, actors, and director) for each of the movies. Users will be able to select search criteria which consist of one or more genres to select movies by and a range of ratings. Users will be able to select any set of genres, and rating ranges. The system will then display the number of movies that fit the search criteria and the top three of these movies (by rating) with additional details. Users will be able to scroll through the entire list of movies or adapt the search criteria at any time with the app. Primary users of the app will be people who want to find new and interesting movies to watch. "
 	},
-	"minesweeper_b": {
-		title: "Minesweeper Royale (backend)",
-		github: "https://github.com/WilliamDann/minesweeper-royale",
-		description: "During CodeDay Spring 2019, a 24-hour hackathon, I created the Express backend for an online battle royale version of minesweeper, using websockets to communicate."
+	"hurricanemapper": {
+		title: "Hurricane Mapper (Integration Manager)",
+		github: "",
+		description: "This application will allow users to explore and add data to a hurricane data set. The data set contains information on the formation and dissipation dates of the hurricane, death count, and the hurricanes’ names and speeds. The data comes from a CSV file (hurricanes.csv) that was made by Professor Meena Syamkumar and used in CS220. All of this data will be populated into a red-black tree at the start of the program. The people using an application like would be anyone interested in hurricanes, ie. meteorologist."
+	},
+	"planemapper": {
+		title: "Plane Mapper (Frontend Developer)",
+		github: "",
+		description: "The app we are developing will map plane and airport locations to a graph and allow the user to find different routes based on the shortest or least costly route. Someone who would use it would be a traveler looking to travel as efficiently and quickly as possible and find the shortest route."
 	},
 	"MNSIT": {
 		title: "MNSIT",
