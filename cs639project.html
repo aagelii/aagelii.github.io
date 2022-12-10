@@ -32,7 +32,7 @@
         implementation, a recognized gesture will trigger a snapshot of the user. However, the hand gestures are restricted to a set of hand gestures
         proposed by TikTok. Due to the scalability and diversity of the consumer base, it is very beneficial to expand this capability such that
         users may specify custom hand gestures to indicate they want to capture photos during a TikTok video.
-
+        <br>
         This problem is important because it relates to the productivity and outcome of TikTok content creators. The appeal of TikTok is the uniqueness
         and diversity of the content creators. It is obvious that the limitations of only certain hand gestures that may be registered by TikTok may
         hinder the creativity of Tiktokers and could both hamper the success of content creators and diminish the experience of TikTok users. 
@@ -40,10 +40,24 @@
       </p>
       <h2>Approach</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse non justo tincidunt, iaculis ante id, aliquet dui.
-        Fusce tempus, nisi a condimentum maximus, diam nibh lobortis
-        leo, ac iaculis neque magna non enim.
+        Here is the approach I used, I used a deep neural network, specifically a convolutional neural network, This is actually the architecture 
+        of my neural network, you can see the input layer is a 1 channel 120x320 pixel image, and it outputs a vector of size 10 which contains 
+        the classification of what hand gesture it is. It is one channel because input images are black and white.
+        <img src="nn.png" alt="Neural network diagram">
+
+        
+
+        <br>
+        For those that might not know, A convolutional neural network is a type of neural network that is specifically designed to analyze and 
+        classify visual images. It is called a convolutional neural network because it uses a technique called convolution to process the image data. 
+        In convolution, the network applies a set of filters to the image to extract features and patterns. The network then uses these features to 
+        classify the image into different categories. This allows the network to accurately recognize and classify complex visual patterns in images.
+        <br>
+        Convolutional neural networks learn through a process called training. In training, the network is presented with a large number of labeled images, 
+        where the labels indicate the correct category for each image. The network then uses these labeled images to adjust its internal parameters, called weights,
+        in order to improve its ability to classify images correctly. This is done through a process called backpropagation, where the error between the 
+        predicted and true labels is calculated and used to adjust the weights. Through this process, the network gradually improves its accuracy in classifying images.
+
       </p>
       <h2>Implementation</h2>
       <p>
