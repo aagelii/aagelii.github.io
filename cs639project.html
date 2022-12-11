@@ -20,6 +20,9 @@
       h2 {
         margin-top: 40px;
       }
+      h3 {
+        margin-top: 20px;
+      }
       .media-container {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -59,9 +62,8 @@
         the classification of what hand gesture it is. It is one channel because input images are black and white.
         </p>
         <p>
-        <img src="nn.png" alt="Neural network diagram" style="float: left;">
         
-
+        <img src="nn.png" alt="Neural network diagram" style="position: relative; left:-230px" >
         
 
         <br>
@@ -81,23 +83,49 @@
       </p>
       <h2>Implementation</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse non justo tincidunt, iaculis ante id, aliquet dui.
-        Fusce tempus, nisi a condimentum maximus, diam nibh lobortis
-        leo, ac iaculis neque magna non enim.
+        For the implementation, I used Python and a few libraries. I used the OpenCV library to capture images from a webcam, and the Keras library to implement the 
+        neural network, NumPy to manipulate the image data, Matplotlib to plot the accuracy graph and the images, PIL to handle the image data, pandas and sklearn
+        to create a confusion matrix. 
+        I used Python because it is a popular programming language, and has a lot of libraries that are useful for machine learning and computer vision tasks.
+        
+
+        <br>
+        <br>
+        For the neural network, I used the Root Mean Squared Propagation optimizer, which is a type of gradient descent algorithm, the categorical crossentropy loss function, ReLU activation functions for
+        the hidden layers, and the softmax function for the output layer. After implementing the above neural network, I trained it on a dataset of 16000 images, there 
+        were images for each of the 10 classes (palm, L, fist, fist moved, thumbs up, index, OK, palm moved, C, thumbs down). For training, I used a GPU to speed up the training process,
+        and I used the Keras library to implement the neural network. I used the Keras library because it is a high-level neural network API that is easy to use and has a lot of
+        built-in functionality. For the training hyperparameters, I used a batch size of 64 and 10 epochs. I used a batch size of 64 because it is a common batch size, and I used 10 epochs
+        because I found that 10 epochs was a good balance between training time and accuracy. I also used a validation split of 0.1, which means that 10% of the training data was used for validation during training.
+        <br>
+        <br>
+        Here is a graph of the training and validation accuracy over the 10 epochs.
+        <br>
+        <br>
+        <img src="accuracy.png" alt="Accuracy graph" style="position: relative; left:-230px" >
+        <br>
+        <br>
+        To then test the accuracy of the model, I used the test set, which was a set of 2000 images. The test set was used to test the accuracy of the model after training. 
+        The test set was not used during training, so the accuracy of the model on the test set is a should be a good indication of how well the model will perform on real-time data.
+        The model was able to achieve 100% accuracy on the test set, which seemed unusually good, but when I tested the model on real-time data, it performed pretty poorly.
+        More on that later.
+        <br>
+        <br>
+        OpenCV got images from my webcam, which are RGB, so I converted them to grayscale, and then resized them to 120x320 pixels. 
+        I then used the model to predict the class of the image, and then displayed the image and the predicted class. To replicate the TikTok filter
+        I mentioned earlier, I kept a queue of the last 10 predictions, and if the most common prediction in the queue was a certain class, then I would
+        take a screenshot of the image.
       </p>
-      <h2>Results</h2>
+      <h2>Problems Encountered & Results</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse non justo tincidunt, iaculis ante id, aliquet dui.
-        Fusce tempus, nisi a condimentum maximus, diam nibh lobortis
-        leo, ac iaculis neque magna non enim.
+        Back to the problem mentioned above, my network had 100% accuracy on the test set, but performed poorly when using real-time data.
+        <br>
+        <br>
+        I tried to combat the low accuracy of real-time data by augmenting the training data by randomly flipping rotating and adding noise to the images, essentially creating new images.
+        By providing the network with a larger and more diverse dataset, data augmentation can help to improve the accuracy of the network's predictions. This is because the network is 
+        able to learn a wider range of patterns and variations in the data, which allows it to better generalize to new, unseen data.
+
       </p>
-      <h2>Problems Encountered</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse non justo tincidunt, iaculis ante id, aliquet dui.
-        Fusce tempus, nisi a condimentum maximus, diam nibh lobortis
-        leo, ac iaculis neque magna non enim.
-      </p>
+
+      <h3> References </h3>
     </div>
