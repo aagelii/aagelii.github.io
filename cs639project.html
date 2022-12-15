@@ -63,8 +63,11 @@
         </p>
         <p>
         
-        <img src="nn.png" alt="Neural network diagram" style="position: relative; left:-230px" >
-        
+        <img src="nn.png" alt="Neural network diagram" style="position: relative; left:-0px" width="1207.5" height="397.5">
+        <!-- style="position: relative; left:-130px" -->
+        <!-- 1635 x 415 -->
+        <!-- width="1007.5" height="397.5" -->
+        <!-- width="817.5" height="207.5" -->
 
         <br>
         <br>
@@ -118,12 +121,23 @@
       </p>
       <h2>Problems Encountered & Results</h2>
       <p>
-        Back to the problem mentioned above, my network had 100% accuracy on the test set, but performed poorly when using real-time data.
+        Back to the problem mentioned above, my first network had 100% accuracy on the test set, but performed poorly when using real-time data. I conjectured
+        that this was because the training and test set was a set of images that were all taken in the same way, but real-time data is taken in a variety of ways.
         <br>
         <br>
-        I tried to combat the low accuracy of real-time data by augmenting the training data by randomly flipping rotating and adding noise to the images, essentially creating new images.
+        I then created a second convoltuional neural network with the same architecture as the first, but this time I tried to combat the low accuracy of real-time data 
+        by augmenting the training data by randomly flipping rotating and adding noise to the images, essentially creating new images.
         By providing the network with a larger and more diverse dataset, data augmentation can help to improve the accuracy of the network's predictions. This is because the network is 
         able to learn a wider range of patterns and variations in the data, which allows it to better generalize to new, unseen data.
+        <br>
+        <br>
+        This resulted in the following accuracy graph.
+        <br>
+        <br>
+        <img src="accuracy2.png" alt="Accuracy graph" style="position: relative; left:-230px" >
+        <br>
+        <br>
+        While the training, validation accuracy was similar to the first network, the accuracy on the test set was much lower, and the accuracy on real-time data was much higher.
 
       </p>
 
