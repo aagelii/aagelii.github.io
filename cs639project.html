@@ -102,10 +102,15 @@
         because I found that 10 epochs was a good balance between training time and accuracy. I also used a validation split of 0.1, which means that 10% of the training data was used for validation during training.
         <br>
         <br>
-        Here is a graph of the training and validation accuracy over the 10 epochs.
+        Here is a graph of the training and validation accuracy over the 10 epochs and the loss vs epoch for training and validation.
         <br>
         <br>
-        <img src="accuracy.png" alt="Accuracy graph" style="position: relative; left:-230px" >
+        <img src="acc.png" alt="Accuracy graph" style="position: relative; left:+350px" >
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="loss.png" alt="Loss graph" style="position: relative; left:+350px" >
         <br>
         <br>
         To then test the accuracy of the model, I used the test set, which was a set of 2000 images. The test set was used to test the accuracy of the model after training. 
@@ -118,6 +123,40 @@
         I then used the model to predict the class of the image, and then displayed the image and the predicted class. To replicate the TikTok filter
         I mentioned earlier, I kept a queue of the last 10 predictions, and if the most common prediction in the queue was a certain class, then I would
         take a screenshot of the image.
+        <br>
+        <br>
+        Here are some clips demoing the program.
+        <br>
+        <br>
+        This first clip shows the program running, and it correctly classifies the hand gesture of an open palm.
+      </p>
+      
+      <div class="media-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=31TfjrZEQzA" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+      </div>
+      <p>
+        This next clip shows the model correctlly classifying the L-shape made by the hand.
+      </p>
+      <div class="media-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=okoze_PvVs0" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+      </div>
+      <p>
+        This next clip shows the model correctly classifying the OK-hand sign.
+      </p>
+      <div class="media-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=CzR0hdw7chQ" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+      </div>
+      <p>
+        In the last clip you can see it fade to black at the end. This is because true to the motivation of the project,
+        similar to the TikTok filter, the program takes a screenshot of the image when it detects a certain hand gesture.
+        Which in this case I specified in the code to be the OK-hand sign. It could be any gesture, but I chose the OK-hand
+        sign because it is a gesture that is commonly used in TikTok videos. The way I chose to determine if a certain gesture
+        was detected was by keeping a queue of the last 10 predictions, and if the most common prediction in the queue was a certain class, then I would
+        take a screenshot of the image. This is a simple way to determine if a certain gesture was detected, but it is not very accurate, and it is not very
+        robust. 
       </p>
       <h2>Problems Encountered & Results</h2>
       <p>
@@ -134,12 +173,12 @@
         This resulted in the following graphs.
         <br>
         <br>
-        <img src="acc2.png" alt="Accuracy graph" style="position: relative; left:-0px" >
+        <img src="acc2.png" alt="Accuracy graph" style="position: relative; left:+350px" >
         <br>
         <br>
         <br>
         <br>
-        <img src="loss2.png" alt="Loss graph" style="position: relative; left:-0px" >
+        <img src="loss2.png" alt="Loss graph" style="position: relative; left:+350px" >
         <br>
         <br>
         While the training, validation accuracy was similar to the first network, the accuracy on the test set was much lower, 
