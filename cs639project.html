@@ -33,6 +33,7 @@
   <body>
     <div class="container">
       <h1>CS 639 Project - Hand Gesture Recognition</h1>
+      <h1> Axel Agelii </h1>
       <h2>Motivation</h2>
       <p>
         There is a high demand for computer vision techniques to detect hand gestures for social media applications that require a video component. 
@@ -132,31 +133,31 @@
       </p>
       
       <div class="media-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=31TfjrZEQzA" 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/31TfjrZEQzA" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
       </div>
       <p>
         This next clip shows the model correctlly classifying the L-shape made by the hand.
       </p>
       <div class="media-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=okoze_PvVs0" 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/okoze_PvVs0" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
       </div>
       <p>
         This next clip shows the model correctly classifying the OK-hand sign.
       </p>
       <div class="media-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=CzR0hdw7chQ" 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CzR0hdw7chQ" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
       </div>
       <p>
         In the last clip you can see it fade to black at the end. This is because true to the motivation of the project,
         similar to the TikTok filter, the program takes a screenshot of the image when it detects a certain hand gesture.
         Which in this case I specified in the code to be the OK-hand sign. It could be any gesture, but I chose the OK-hand
-        sign because it is a gesture that is commonly used in TikTok videos. The way I chose to determine if a certain gesture
+        sign because it is a gesture that is commonly used in TikTok videos. As mentioned preivously, the way I chose to determine if a certain gesture
         was detected was by keeping a queue of the last 10 predictions, and if the most common prediction in the queue was a certain class, then I would
-        take a screenshot of the image. This is a simple way to determine if a certain gesture was detected, but it is not very accurate, and it is not very
-        robust. 
+        take a screenshot of the image. This is a simple way to determine if a certain gesture was detected, it is not very accurate, and it is not very
+        robust, however, it suffices for this implementation. 
       </p>
       <h2>Problems Encountered & Results</h2>
       <p>
@@ -181,31 +182,49 @@
         <img src="loss2.png" alt="Loss graph" style="position: relative; left:+350px" >
         <br>
         <br>
-        While the training, validation accuracy was similar to the first network, the accuracy on the test set was much lower, 
-        and the accuracy on real-time data felt much higher. I say 'felt' as I wasn't sure if the accuracy was actually higher during
-        real-time data testing, but I think it was. I think this is because the network was able to generalize better to real-time data,
-        as it was trained on a larger and more diverse dataset. But this is all conjecture and I don't have any hard evidence to back it up.
+        While the training, validation, and test accuracy (100% test accuracy, the same as non augmented) was similar to the first network, the loss on the test set
+         was slightly lower for the original data, and the accuracy on real-time data felt much higher. I say 'felt' as I wasn't sure 
+        if the accuracy was actually higher during real-time data testing, but I think it was. I think this is because the network was 
+        able to generalize better to real-time data, as it was trained on a larger and more diverse dataset. But this is all conjecture 
+        and I don't have any hard evidence to back it up.
 
       </p>
+      <h2>Future Work</h2>
+      <p>
+        For any future work on this and related projects, it would be beneficial to try to improve the accuracy of the model on real-time data. I think this could be done by
+        having a larger dataset, either by augmenting the training data even more or simply expanding the current dataset by taking more pictures of hands
+        in many different scenarios, and also by using a different model architecture. 
+
+      </p>
+      
+      <br>
+      <br>
+      <br>
+      Link to the presentation slides<a href="https://docs.google.com/presentation/d/10QJ_Yeku_Q6Pu6-7e5JK-NWY3ZqdFLA2kmWtSqj2nW4/edit?usp=sharing"> here</a>
+      <br>
+      <br>
+      Link to the repository with the code and models <a href="https://github.com/aagelii/cs639"> here</a>
 
       <h3> References </h3>
-      <a href="https://www.kaggle.com/gti-upm/leapgestrecog">Leap Gesture Recognition Dataset</a>
+      <ol>
+      <li><a href="https://www.kaggle.com/gti-upm/leapgestrecog">Leap Gesture Recognition Dataset</a></li>
       <br>
-      <a href="https://techvidvan.com/tutorials/hand-gesture-recognition-tensorflow-opencv/">Tutorial using OpenCV and MediaPipe</a>
+      <li><a href="https://techvidvan.com/tutorials/hand-gesture-recognition-tensorflow-opencv/">Tutorial using OpenCV and MediaPipe</a></li>
       <br>
-      <a href="https://google.github.io/mediapipe/getting_started/python.html">MediaPipe Documentation</a>
+      <li><a href="https://google.github.io/mediapipe/getting_started/python.html">MediaPipe Documentation</a></li>
       <br>
-      <a href="https://www.tensorflow.org/api_docs/python/tf/keras/Model">Keras Documentation</a>
+      <li><a href="https://www.tensorflow.org/api_docs/python/tf/keras/Model">Keras Documentation</a></li>
       <br>
-      <a href="http://alexlenail.me/NN-SVG/LeNet.html">Neural Network Diagram</a>
+      <li><a href="http://alexlenail.me/NN-SVG/LeNet.html">Neural Network Diagram</a></li>
       <br>
-      <a href="https://opencv.org/">OpenCV Documentation</a>
+      <li><a href="https://opencv.org/">OpenCV Documentation</a></li>
       <br>
-      <a href="https://towardsdatascience.com/complete-guide-to-data-augmentation-for-computer-vision-1abe4063ad07">Guide for data augmentation</a>
+      <li><a href="https://towardsdatascience.com/complete-guide-to-data-augmentation-for-computer-vision-1abe4063ad07">Guide for data augmentation</a></li>
       <br>
-      <a href="https://arxiv.org/pdf/2111.00038.pdf">Paper on real time hand gesture recognition</a>
+      <li><a href="https://arxiv.org/pdf/2111.00038.pdf">Paper on real time hand gesture recognition</a></li>
       <br>
-      <a href="https://link.springer.com/article/10.1007/s10462-012-9356-9">Paper on hand gesture recognition</a>
+      <li><a href="https://link.springer.com/article/10.1007/s10462-012-9356-9">Paper on hand gesture recognition</a></li>
       <br>
-      <a href="https://ieeexplore.ieee.org/abstract/document/6899454?casa_token=VTPPX1RxOW8AAAAA:1AGGgkJ5KCsRCNwys9uvYAg7-PZuXRGueQy2YSEc4IaclpvDoJL0BEFGpn6EeHiBEdtwmF_ctA">Paper on hand gesture recognition using CNN</a>
+      <li><a href="https://ieeexplore.ieee.org/abstract/document/6899454?casa_token=VTPPX1RxOW8AAAAA:1AGGgkJ5KCsRCNwys9uvYAg7-PZuXRGueQy2YSEc4IaclpvDoJL0BEFGpn6EeHiBEdtwmF_ctA">Paper on hand gesture recognition using CNN</a></li>
+    </ol>
     </div>
